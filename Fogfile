@@ -1,5 +1,5 @@
 base nil
 
-# Creates an empty docker image by piping and empty tarball to the import
+# Creates an empty docker image by piping an empty tarball to the import
 # command.
 image custom: 'tar cvf - --files-from /dev/null | docker import -'
